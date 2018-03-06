@@ -1,1 +1,1 @@
-Visit [TrustNote website](trustnote.org) to get more information.
+You can get more information of TrustNote by visiting [trustnote.org](https://trustnote.org).
