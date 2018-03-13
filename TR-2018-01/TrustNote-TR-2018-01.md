@@ -51,17 +51,27 @@ Preliminary Draft of TrustNote Cryptographic Algorithms</h1>
 
 <h1 id="Disclaimer">Disclaimer</h1>
 
-TrustNote Intitute of Technology and Reseach & Development section hereby declear that, this package is under MIT opensource software license and this software is distributed without any warranty. TrustNote Institue of Technology declears that we are <b>NOT</b> responsible for direct, indirect, incidental or consequential damages resulting from any defect, error or failure to perform. This package is <b>experimental and a work-in-progress</b>, use at your own risk. TrustNote R&D team can update (add/remove packages) any time without informing the users.
+TrustNote Institute of Technology and Research & Development section hereby declare that, this package is under MIT open source software license and this software is distributed without any warranty. TrustNote Institute of Technology declares that we are <b>NOT</b> responsible for direct, indirect, incidental or consequential damages resulting from any defect, error or failure to perform. This package is <b>experimental and a work-in-progress</b>, use at your own risk. TrustNote R&D team can update (add/remove packages) any time without informing the users.
+
+**Contact Us**
+
+Business Enquires: foundation@trustnote.org 
+Technical Support: community@trustnote.org 
+
+**Copyright**
+
+This document is a property of TrustNote Institute of Technology and all rights reserved by TrustNote Institute of Technology.
+
 
 ----------
 
-<h1 id="Howwe">How do we select the best among the nomeniees?</h1>
+<h1 id="Howwe">How do we select the best among the nominees?</h1>
 
 Selecting an efficient algorithm which also would be robust and secure while it can be performed very fast for many times per second on variety of devices is a very important and difficult process. Any failure or security hole will result in an irreparable damage. <b>TrustNote Institute of Technology - R&D section</b> criteria for selecting its project's cryptographic algorithms are:
 
 - <b>High security level and Robustness</b>
 - <b>Better performance</b>
-- <b>Most compatible one with varaity of devices</b>
+- <b>Most compatible one with variety of devices</b>
 
 So, any algorithm fits the best into these three criteria will be selected by us. But it's not the end, after selecting the best available algorithm, our experts in TrustNote will perform several challenging tests to verify its trustworthy.
 
@@ -75,33 +85,33 @@ Selecting an efficient, secure and fast hash function is crucial during the desi
 
 **Please, note that: The orders in table above are totally by randomness and this table is not sorted by any kind of factors.**
 
-You can see a full list of available Hash functions and their eBASH (ECRYPT Benchmarking of All Submitted Hashes) benchmarks avialable at:
+You can see a full list of available Hash functions and their eBASH (ECRYPT Benchmarking of All Submitted Hashes) benchmarks available at:
 
-- eBASH benchmarks for [Blake2b](http://bench.cr.yp.to/impl-hash/blake2b.html).
-- eBASH benchmarks for [Blake2s](http://bench.cr.yp.to/impl-hash/blake2s.html).
+- eBASH benchmarks for [Blake2b](http://bench.cr.yp.to/impl-hash/Blake2b.html).
+- eBASH benchmarks for [Blake2s](http://bench.cr.yp.to/impl-hash/Blake2s.html).
 - eBASH benchmarks for [results of benchmarking of all hash functions](http://bench.cr.yp.to/results-hash.html).
 - eBASH benchmarks for [full list of hash functions](http://bench.cr.yp.to/primitives-hash.html)
 
-However, this is not our main reason for choosing blake2. In the rest of this section, we will introduce our reasons why we picked blake2 among plenty of available hash fuctions.
+However, this is not our main reason for choosing Blake2. In the rest of this section, we will introduce our reasons why we picked Blake2 among plenty of available hash fuctions.
 
-BLAKE2 is a cryptographic hash function faster than MD5, SHA-1, SHA-2, and SHA-3, yet is at least as secure as the latest standard SHA-3. BLAKE2 has been adopted by many projects due to its high speed, security, and simplicity. BLAKE2 comes in two types [3]:
-- **BLAKE2b** (or just BLAKE2) is optimized for 64-bit platforms including NEON-enabled ARMs and produces digests of any size between 1 and 64 bytes [3].
-- **BLAKE2s** is optimized for 8- to 32-bit platforms and produces digests of any size between 1 and 32 bytes [3].
+Blake2 is a cryptographic hash function faster than MD5, SHA-1, SHA-2, and SHA-3, yet is at least as secure as the latest standard SHA-3. Blake2 has been adopted by many projects due to its high speed, security, and simplicity. Blake2 comes in two types [3]:
+- **Blake2b** (or just Blake2) is optimized for 64-bit platforms including NEON-enabled ARMs and produces digests of any size between 1 and 64 bytes [3].
+- **Blake2s** is optimized for 8- to 32-bit platforms and produces digests of any size between 1 and 32 bytes [3].
 
-BLAKE2 includes the 4-way parallel BLAKE2bp and 8-way parallel BLAKE2sp designed for increased performance on multicore or SIMD (Single Instruction, Multiple Data) CPUs. BLAKE2 offers these algorithms tuned to your specific requirements, such as keyed hashing (that is, MAC or PRF), hashing with a salt, updatable or incremental tree-hashing, or any combination thereof.
+Blake2 includes the 4-way parallel Blake2bp and 8-way parallel Blake2sp designed for increased performance on multicore or SIMD (Single Instruction, Multiple Data) CPUs. Blake2 offers these algorithms tuned to your specific requirements, such as keyed hashing (that is, MAC or PRF), hashing with a salt, updatable or incremental tree-hashing, or any combination thereof.
 
-The SHA-3 Competition succeeded in selecting a hash function that complements SHA-2 and is much faster than SHA-2 in hardware [1]. There is nevertheless a demand for fast software hashing for applications such as integrity checking and deduplication in filesystems and etc. [2]
+The SHA-3 Competition succeeded in selecting a hash function that complements SHA-2 and is much faster than SHA-2 in hardware [1]. There is nevertheless a demand for fast software hashing for applications such as integrity checking and deduplication in file systems and etc. [2]
 
-The chart below is the speed comparison of various popular hash functions, taken from eBACS’s “sandy” measurements. SHA-3 and BLAKE2 have no known security issues. SHA-1, MD5, SHA-256, and SHA-512 are susceptible to length-extension. SHA-1 and MD5 are vulnerable to collisions. MD5 is vulnerable to chosen-prefix collisions [2].
+The chart below is the speed comparison of various popular hash functions, taken from eBACS’s “sandy” measurements. SHA-3 and Blake2 have no known security issues. SHA-1, MD5, SHA-256, and SHA-512 are susceptible to length-extension. SHA-1 and MD5 are vulnerable to collisions. MD5 is vulnerable to chosen-prefix collisions [2].
 
 ![](./TrustNote_TR_2018_01/1.png)
 
-BLAKE thus appears to be a good candidate for fast software hashing. BLAKE2 aims to provide the highest security level, be it in terms of classical notions as (second) preimage or collision resistance, or of theoretical notions as pseudorandomness or indifferentiability [2].
+Blake thus appears to be a good candidate for fast software hashing. Blake2 aims to provide the highest security level, be it in terms of classical notions as (second) preimage or collision resistance, or of theoretical notions as pseudo randomness or indifferentiability [2].
 
 Blake2 offers the following properties and capabilities:
 
 - **Faster than MD5** on 64-bit Intel platforms.
-- **32% less RAM** required than BLAKE.
+- **32% less RAM** required than Blake.
 - **Minimal padding**, which is faster and simpler to implement.
 - Direct support, with no overhead, of:
   - **Parallelism** for many-times faster hashing on multicore or SIMD (Single Instruction, Multiple Data) CPUs.
@@ -109,13 +119,13 @@ Blake2 offers the following properties and capabilities:
   - **Prefix-MAC** for authentication that is simpler and faster than HMAC.
   - **Personalization** for defining a unique hash function for each application.
 
-**Consequently**, it is evident that blake2 is the best available hash function untill now. We may change the hash if we find some flaw in Blake2 or if we find another hash function algorithm which offers higher assurance and performance. For more in-depth information about blake2 capabilities, please visit the [Blake2](https://blake2.net/#sp) official website.
+**Consequently**, it is evident that Blake2 is the best available hash function until now. We may change the hash if we find some flaw in Blake2 or if we find another hash function algorithm which offers higher assurance and performance. For more in-depth information about Blake2 capabilities, please visit the [Blake2](https://Blake2.net/#sp) official website.
 
 ----------
 
 <h2 id="whyed">Why Ed25519?</h2>
 
-In previous section we discussed the importance and challanges of selecting a cryptographic hash function. In this section we are going to select a Public-key cryptography algorithm. There are plenty of theories that these algorithms are developed and created based on them, to name some we can say: Discrete logarithm, Elliptic-curve cryptography, Non-commutative cryptography, RSA (Rivest–Shamir–Adleman) problem and Trapdoor function. Furthermore, for each mathematical algorithm which we already mentioned them, there are numerious number of Public-key cryptography algorithms which you can see some of them in the table below:
+In previous section we discussed the importance and challenges of selecting a cryptographic hash function. In this section we are going to select a Public-key cryptography algorithm. There are plenty of theories that these algorithms are developed and created based on them, to name some we can say: Discrete logarithm, Elliptic-curve cryptography, Non-commutative cryptography, RSA (Rivest–Shamir–Adleman) problem and Trapdoor function. Furthermore, for each mathematical algorithm which we already mentioned them, there are numerous number of Public-key cryptography algorithms which you can see some of them in the table below:
 
 ![](./TrustNote_TR_2018_01/m14.png)
 
@@ -135,13 +145,13 @@ You can see a full list of available Public-key cryptography algorithms and thei
 <li><b>High security level</b> This system has a 2<sup>128</sup> security target; The best attacks known actually cost more than 2<sup>140</sup> bit operations on average, and degrade quadratically in success probability as the number of bit operations drops. </li>
 <li><b>Foolproof session keys</b> Signatures are generated deterministically; key generation consumes new randomness but new signatures do not. This is not only a speed feature but also a security feature, directly relevant to the recent collapse of the Sony PlayStation 3 security system. </li>
 <li><b>Collision resilience</b> Hash-function collisions do not break this system. This adds a layer of defense against the possibility of weakness in the selected hash function.</li>
-<li><b>No secret array indices</b> Ed25519 never reads or writes data from secret addresses in RAM; the pattern of addresses is completely predictable. The software is therefore immune to cache-timing attacks, hyperthreading attacks, and other side-channel attacks that rely on leakage of addresses through the CPU cache.</li>
+<li><b>No secret array indices</b> Ed25519 never reads or writes data from secret addresses in RAM; the pattern of addresses is completely predictable. The software is therefore immune to cache-timing attacks, hyper threading attacks, and other side-channel attacks that rely on leakage of addresses through the CPU cache.</li>
 <li><b>No secret branch conditions</b> Ed25519 never performs conditional branches based on secret data; the pattern of jumps is completely predictable. The software is therefore immune to side-channel attacks that rely on leakage of information through the branch-prediction unit.</li>
 <li><b>Small signatures</b> Signatures fit into 64 bytes. These signatures are actually compressed versions of longer signatures; the times for compression and decompression are included in the cycle counts reported above.</li>
 <li><b>Small keys</b> Public keys consume only 32 bytes. The times for compression and decompression are again included.</li>
 </ul>
 
-**Eventually**, it is evident that Ed25519 is one of the best available Public-key signature algorithm untill now which is going to be used for digital signatures. We may change the Public-key signature if we find some flaw in Ed25519 or if we find another Public-key signature algorithm which offers higher assurance and performance. We picked Ed25519 algorithm because of the advantages this algoritm offering. For more in-depth information about Ed25519 features please visit [Ed25519](https://ed25519.cr.yp.to/papers.html) official website.
+**Eventually**, it is evident that Ed25519 is one of the best available Public-key signature algorithm until now which is going to be used for digital signatures. We may change the Public-key signature if we find some flaw in Ed25519 or if we find another Public-key signature algorithm which offers higher assurance and performance. We picked Ed25519 algorithm because of the advantages this algoritm offering. For more in-depth information about Ed25519 features please visit [Ed25519](https://ed25519.cr.yp.to/papers.html) official website.
 
 ----------
 
@@ -158,9 +168,9 @@ There are four main consensus mechanisms, a consensus mechanism is fundamental p
 
 ![](./TrustNote_TR_2018_01/35.png)
 
-In proof-of-work mining, miners are tasked with generating a short binary blob (called a nonce), which, when hashed, produces an output value less than a pre-specified target threshold. Due to the cryptographic nature of each currency’s hash function, there is no way to reverse-engineer or back-compute a nonce that satisfies the target threshold limit. Instead, miners must “guess-and-check” hashes as fast as possible, and hope they’re the first miner in the entire crypto-currency’s network to find a valid nonce.
+In proof-of-work mining, miners are tasked with generating a short binary blob (called a nonce), which, when hashed, produces an output value less than a pre-specified target threshold. Due to the cryptographic nature of each currency’s hash function, there is no way to reverse-engineer or back-compute a nonce that satisfies the target threshold limit. Instead, miners must “guess-and-check” hashes as fast as possible, and hope they’re the first miner in the entire cryptocurrency's network to find a valid nonce.
 
-There are varaity of algorithms based on this consensus mechanism such as Equihash, Ethash. Equihash is a memory-oriented Proof-of-Work algorithm developed by the University of Luxembourg's Interdisciplinary Centre for Security, Reliability and Trust (SnT). **Zcash, Zcoin, Zclassic, Bitcoin Gold and Komodo** all using equihash while **Ethereum, Ethereum Classic, KodakCoin and Ubiq** are using Ethash. Equihash is a memory-oriented Proof-of-Work, which means how much mining you can do is mostly determined by how much RAM you have. The chart below shows how the ethash works. the main advantage of equihash over ethash is simplicity in algorithm. Equihash having the same speed on both CPU and GPU instead, Ethash has different speeds on CPU, GPU and FPGA based compilation. Finally, we can calculate the chance of reachinhg solution/solutions of equihash by taking advantage of special probablity. The diagram of Ethash Algorithm and Equihash algorithms are presented below from refrence [5]:
+There are variety of algorithms based on this consensus mechanism such as Equihash, Ethash. Equihash is a memory-oriented Proof-of-Work algorithm developed by the University of Luxembourg's Interdisciplinary Centre for Security, Reliability and Trust (SnT). **Zcash, Zcoin, Zclassic, Bitcoin Gold and Komodo** all using Equihash while **Ethereum, Ethereum Classic, KodakCoin and Ubiq** are using Ethash. Equihash is a memory-oriented Proof-of-Work, which means how much mining you can do is mostly determined by how much RAM you have. The chart below shows how the ethash works. the main advantage of Equihash over ethash is simplicity in algorithm. Equihash having the same speed on both CPU and GPU instead, Ethash has different speeds on CPU, GPU and FPGA based compilation. Finally, we can calculate the chance of reachinhg solution/solutions of Equihash by taking advantage of special probablity. The diagram of Ethash Algorithm and Equihash algorithms are presented below from refrence [5]:
 
 **Equihash Algorithm**
 
@@ -181,27 +191,26 @@ In this section we will introduce the parameters and mathematical foundation of 
 ![](./TrustNote_TR_2018_01/m8.png)
 ![](./TrustNote_TR_2018_01/m9.png)
 
-**The Parameters of Blake2b & Blake2s**
 - General parameters:
-  - **Digest byte length** (1 byte): an integer in [1, 64] for BLAKE2b, in [1, 32] for BLAKE2s
-  - **Key byte length** (1 byte): an integer in [0, 64] for BLAKE2b, in [0, 32] for BLAKE2s (set to 0 if no key is used)
-  - **Salt** (16 or 8 bytes): an arbitrary string of 16 bytes for BLAKE2b, and 8 bytes for BLAKE2s (set to all-NULL by default)
-  - **Personalization** (16 or 8 bytes): an arbitrary string of 16 bytes for BLAKE2b, and 8 bytes for BLAKE2s (set to all-NULL by default)
+  - **Digest byte length** (1 byte): an integer in [1, 64] for Blake2b, in [1, 32] for Blake2s
+  - **Key byte length** (1 byte): an integer in [0, 64] for Blake2b, in [0, 32] for Blake2s (set to 0 if no key is used)
+  - **Salt** (16 or 8 bytes): an arbitrary string of 16 bytes for Blake2b, and 8 bytes for Blake2s (set to all-NULL by default)
+  - **Personalization** (16 or 8 bytes): an arbitrary string of 16 bytes for Blake2b, and 8 bytes for Blake2s (set to all-NULL by default)
 - Tree hashing parameters:
   - **Fanout** an integer in [0, 255] (set to 0 if unlimited, and to 1 only in sequential mode)
   - **Maximal depth** (1 byte): an integer in [1, 255] (set to 255 if unlimited, and to 1 only in sequential mode)
   - **Leaf maximal byte length** (4 bytes): an integer in [0, 2<sup>32</sup> - 1], that is, up to 4 GiB (set to 0 if unlimited, or in sequential mode)
-  - **Node offset** (8 or 6 bytes): an integer in [0, 2<sup>64</sup>-1] for BLAKE2b, and in [0, 2<sup>48</sup>-1] for BLAKE2s (set to 0 for the first, leftmost, leaf, or in sequential mode)
+  - **Node offset** (8 or 6 bytes): an integer in [0, 2<sup>64</sup>-1] for Blake2b, and in [0, 2<sup>48</sup>-1] for Blake2s (set to 0 for the first, leftmost, leaf, or in sequential mode)
   - **Node depth** (1 byte): an integer in [0, 255] (set to 0 for the leaves, or in sequential mode)
-  - **Inner hash byte length** (1 byte): an integer in [0, 64] for BLAKE2b, and in [0, 32] for BLAKE2s (set to 0 in sequential mode)
+  - **Inner hash byte length** (1 byte): an integer in [0, 64] for Blake2b, and in [0, 32] for Blake2s (set to 0 in sequential mode)
 
 <h3 id="mathb2b">Blake2b</h3>
 
-BLAKE2b supports data of any byte length <html><math> 0 <mo>&#x2A7D;</mo> *l* <mo>&#x2A7D;</mo> 2<sup>128</sup> </math></html>. Data is first padded to form a sequence of N = *[l/128]* 16-word blocks m<sup>0</sup>, m<sup>1</sup>, ... ,m<sup>N-1</sup> and then hashed by doing [2]:
+Blake2b supports data of any byte length <html><math> 0 <mo>&#x2A7D;</mo> *l* <mo>&#x2A7D;</mo> 2<sup>128</sup> </math></html>. Data is first padded to form a sequence of N = *[l/128]* 16-word blocks m<sup>0</sup>, m<sup>1</sup>, ... ,m<sup>N-1</sup> and then hashed by doing [2]:
 
 ![](./TrustNote_TR_2018_01/m00.png)
 
-where *l*<sup>i</sup> denotes the number of data bytes in m<sup>0</sup>, m<sup>1</sup>, ... ,m<sup>N-1</sup> (that is, not counting any padding byte), P is the parameter block specified in **Parameter Blocks**, and IV is (as in BLAKE and SHA-512) the following 64-bit words [2]:
+where *l*<sup>i</sup> denotes the number of data bytes in m<sup>0</sup>, m<sup>1</sup>, ... ,m<sup>N-1</sup> (that is, not counting any padding byte), P is the parameter block specified in **Parameter Blocks**, and IV is (as in Blake and SHA-512) the following 64-bit words [2]:
 
 ![](./TrustNote_TR_2018_01/m0.png)
 
@@ -219,7 +228,7 @@ where f<sub>0</sub> and f<sub>1</sub> are the finalization flags. The internal s
 
 ![](./TrustNote_TR_2018_01/m2.png)
 
-That is, a round applies a G function to each of the columns in parallel, and then to all of the diagonals in parallel. The G function of BLAKE2b uses the constants in the table below which is permutations of *f {0, ..., 15}* used by the BLAKE2 functions [2].
+That is, a round applies a G function to each of the columns in parallel, and then to all of the diagonals in parallel. The G function of Blake2b uses the constants in the table below which is permutations of *f {0, ..., 15}* used by the Blake2 functions [2].
 
 ![](./TrustNote_TR_2018_01/m3.png)
 
@@ -227,15 +236,15 @@ After the 12 rounds, the new chain value h<sub>0</sub><sup>'</sup>, ..., h<sub>7
 
 ![](./TrustNote_TR_2018_01/m4.png)
 
-<html><p align="justify">Note the absence of the salt, compared to BLAKE.</p></html>
+<html><p align="justify">Note the absence of the salt, compared to Blake.</p></html>
 
 <h3 id="mathb2s">Blake2s</h3>
 
-BLAKE2s supports data of any byte length <html><math> 0 <mo>&#x2A7D;</mo> *l* <mo>&#x2A7D;</mo> 2<sup>64</sup> </math></html>. It works similarly to BLAKE2b, but on 32-bit words instead of 64-bit words (the byte length of a chaining value, a message block, a counter or finalization flag are thus divided by two). BLAKE2s uses the following IV:
+Blake2s supports data of any byte length <html><math> 0 <mo>&#x2A7D;</mo> *l* <mo>&#x2A7D;</mo> 2<sup>64</sup> </math></html>. It works similarly to Blake2b, but on 32-bit words instead of 64-bit words (the byte length of a chaining value, a message block, a counter or finalization flag are thus divided by two). Blake2s uses the following IV:
 
 ![](./TrustNote_TR_2018_01/m5.png)
 
-BLAKE2s does 10 rounds, and uses the G function. For more in-depth mathematical information about Blake2b and Blake2s, please visit [2].
+Blake2s does 10 rounds, and uses the G function. For more in-depth mathematical information about Blake2b and Blake2s, please visit [2].
 
 ----------
 
@@ -247,7 +256,7 @@ In this section we will introduce the mathematical foundation of Ed25519 and the
 
 1) An odd prime power p.  EdDSA uses an elliptic curve over the finite field GF(p).
 
-2) An integer b with 2<sup>(b-1)</sup> > p.  EdDSA public keys have exactly b bits, and EdDSA signatures have exactly 2*b bits.  b isrecommended to be a multiple of 8, so public key and signature lengths are an integral number of octets.
+2) An integer b with 2<sup>(b-1)</sup> > p.  EdDSA public keys have exactly b bits, and EdDSA signatures have exactly 2*b bits.  b is recommended to be a multiple of 8, so public key and signature lengths are an integral number of octets.
 
 3) A (b-1)-bit encoding of elements of the finite field GF(p)
 
@@ -279,7 +288,7 @@ Ed25519 is EdDSA instantiated with:
 
 **b** 256
 
-**encodingof GF(p)** 255-bit little-endian encoding of {0, 1, ..., p-1}
+**encoding of GF(p)** 255-bit little-endian encoding of {0, 1, ..., p-1}
 
 **c** base 2 logarithm of cofactor of edwards25519 in (cofactor of edwards25519 =  8)
 
@@ -404,7 +413,7 @@ The inputs to the signing procedure is the private key, a 32-octet string, and a
 
 <h3 id="eqhmath">Equihash</h3>
 
-In this section they expose the generalized birthday problem and the algorithm for it by Wagner [6]. The generalized birthday problem for one list is formulated as follows: given list *L* of *n*-bit strings *{X<sub>i</sub>}*, find distinct *{X<sub>i<sub>j</sub></sub>}* such that [6]:
+In this section they expose the generalized birthday problem and the algorithm for it by Wagner [11]. The generalized birthday problem for one list is formulated as follows: given list *L* of *n*-bit strings *{X<sub>i</sub>}*, find distinct *{X<sub>i<sub>j</sub></sub>}* such that [11]:
 
 *X<sub>i<sub>1</sub></sub> <mo>&#x2295;</mo> X<sub>i<sub>2</sub></sub> <mo>&#x2295;</mo> ... <mo>&#x2295;</mo> X<sub>i<sub>3</sub></sub> = 0*
 
@@ -414,69 +423,69 @@ Wagner considers the setting where *{X<sub>i</sub>}* are outputs of some (non-ke
 
 For *k = 1* this problem is the collision search, and can be solved trivially by sorting in *2<sup>n/2</sup>* time and space complexity if |L| > *2<sup>n/2</sup>*. However, for *k > 1* and smaller lists the problem is harder. For instance, from the information-theoretic point of view we expect a solution for *k = 2* in a list of size *2<sup>n/4</sup>*, but no algorithm faster than *2<sup>n/3</sup>* operations is known [11].
 
-Wagner demonstrated an algorithm for *k > 1* and the lists are large enough to contain numerous solutions. It has time and space complexity of *O(2<sup>n/(k+1)</sup>)* for lists of the same size. Wagner’s algorithm generalizes easily to some operations other than XOR (e.g., to the modular addition). We also note that for *k  log<sub>2</sub>n* a XOR solution can be found by the much faster Gaussian elimination with complexity of *O(2<sup>k</sup>)* string operations. the table below adopted from [6] with some modifications explains the basic wagner algorithm for the generalized birthday problem.
+Wagner demonstrated an algorithm for *k > 1* and the lists are large enough to contain numerous solutions. It has time and space complexity of *O(2<sup>n/(k+1)</sup>)* for lists of the same size. Wagner’s algorithm generalizes easily to some operations other than XOR (e.g., to the modular addition). We also note that for *k  log<sub>2</sub>n* a XOR solution can be found by the much faster Gaussian elimination with complexity of *O(2<sup>k</sup>)* string operations. the table below adopted from [11] with some modifications explains the basic wagner algorithm for the generalized birthday problem.
 
 ![](./TrustNote_TR_2018_01/22.png)
 
-Assume that sorting *l = O(N)* elements is computationally equivalent to *l* calls to the hash function *H*. Let a single call to *H* be our time unit [6].
+Assume that sorting *l = O(N)* elements is computationally equivalent to *l* calls to the hash function *H*. Let a single call to *H* be our time unit [1].
 
-**Proposition 1.** For *N = 2<sup>(n/(k+1))+1</sup>* and *k<sup>2</sup> < n* Algorithm above produces two solutions (on average) using *(2<sup>k-1</sup>+n)N/8* bytes of memory in time *(k+1)N* [6].
+**Proposition 1.** For *N = 2<sup>(n/(k+1))+1</sup>* and *k<sup>2</sup> < n* Algorithm above produces two solutions (on average) using *(2<sup>k-1</sup>+n)N/8* bytes of memory in time *(k+1)N* [5].
 
-*Proof.* Suppose they store *N = 2<sup>(n/(k+1))+1</sup>* tuples at the first step. Then after collision search they expect [6]:
+*Proof.* Suppose they store *N = 2<sup>(n/(k+1))+1</sup>* tuples at the first step. Then after collision search they expect [5]:
 
 *(N(N - 1)/2)/(N/2) = N - 1*
 
-Entries for the second table, then *N - 3* entries for the third table, and so on. Before the last (k-th) collision search they expect *N - 2<sup>k-1</sup>+1 is approximatly N = 2<sup>(n/(k+1))+1</sup>* entries, thus on average we obtain two solutions after the last step. The computational complexity is dominated by the complexity of list generation (N hash calls) and subsequent k sortings of N elements. Therefore, the total computational complexity is equivalent to [6]:
+Entries for the second table, then *N - 3* entries for the third table, and so on. Before the last (k-th) collision search they expect *N - 2<sup>k-1</sup>+1 is approximately N = 2<sup>(n/(k+1))+1</sup>* entries, thus on average we obtain two solutions after the last step. The computational complexity is dominated by the complexity of list generation (N hash calls) and subsequent k sorting of N elements. Therefore, the total computational complexity is equivalent to [5]:
 
 *(k + 1)N = (k + 1)N = 2<sup>(n/(k+1))+1</sup>*
 
-Hash function calls. This ends the proof [6]. they have not computed the variance of the number of solutions, but their experiments demonstrate that the actual number of solutions at each step is very close (within 10%) to the expected number. If larger lists are used, the table will grow in size over the steps. We have taken the list size  exactly so that the expected number of solutions is small and the table size does not change much [6].
+Hash function calls. This ends the proof [5]. they have not computed the variance of the number of solutions, but their experiments demonstrate that the actual number of solutions at each step is very close (within 10%) to the expected number. If larger lists are used, the table will grow in size over the steps. We have taken the list size  exactly so that the expected number of solutions is small and the table size does not change much [5].
 
-The generalized birthday problem in its basic form lacks some necessary properties as a proof-of-work. The reason is that Wagner’s algorithm can be iterated to produce multiple solutions by selecting other sets of colliding bits or using more sophisticated techniques . If more memory is available, these solutions can be produced at much lower amortized cost (Proposition 3). Since this property violates the non-amortization requirement for the PoW (see [6]), they suggest modifying the problem so that only two solutions can be produced on average [6].
+The generalized birthday problem in its basic form lacks some necessary properties as a proof-of-work. The reason is that Wagner’s algorithm can be iterated to produce multiple solutions by selecting other sets of colliding bits or using more sophisticated techniques . If more memory is available, these solutions can be produced at much lower amortized cost (Proposition 3). Since this property violates the non-amortization requirement for the PoW (see [5]), they suggest modifying the problem so that only two solutions can be produced on average [5].
 
-Our modification is inspired by the fact that a solution found by Wagner’s algorithm carries its footprint. Namely, the intermediate *2<sup>l</sup>-XORs* have leading *nl/(k+1)* bits, for example X<sub>i<sub>4</sub></sub> <mo>&#x2295;</mo> X<sub>i<sub>5</sub></sub> <mo>&#x2295;</mo> X<sub>i<sub>6</sub></sub> <mo>&#x2295;</mo> X<sub>i<sub>7</sub></sub> collide on certain *2n/k+1* bits. Therefore, if we pre-fix the positions where *2<sup>l</sup>-XORs* have zero bits, they bind the user to a particular algorithm flow. Moreover, they can prove that the total number of possible solutions that conform to these restrictions is only 2 on average, so that the problem becomes amortization-free for given input list *L*. they only have to take care of duplicate solutions which appear if they swap *2<sup>l</sup>-XORs* within the *2<sup>l</sup>-XORs*, for any *l*. We simply require that every *2<sup>l</sup>-XORs* is ordered as a pair, e.g. with lexicographic order. they stress that a certain order is a prerequisite as otherwise duplicate solutions (produced by swaps in pairs, swaps of pairs, etc.) would be accepted [6].
+Our modification is inspired by the fact that a solution found by Wagner’s algorithm carries its footprint. Namely, the intermediate *2<sup>l</sup>-XORs* have leading *nl/(k+1)* bits, for example X<sub>i<sub>4</sub></sub> <mo>&#x2295;</mo> X<sub>i<sub>5</sub></sub> <mo>&#x2295;</mo> X<sub>i<sub>6</sub></sub> <mo>&#x2295;</mo> X<sub>i<sub>7</sub></sub> collide on certain *2n/k+1* bits. Therefore, if we pre-fix the positions where *2<sup>l</sup>-XORs* have zero bits, they bind the user to a particular algorithm flow. Moreover, they can prove that the total number of possible solutions that conform to these restrictions is only 2 on average, so that the problem becomes amortization-free for given input list *L*. they only have to take care of duplicate solutions which appear if they swap *2<sup>l</sup>-XORs* within the *2<sup>l</sup>-XORs*, for any *l*. We simply require that every *2<sup>l</sup>-XORs* is ordered as a pair, e.g. with lexicographic order. they stress that a certain order is a prerequisite as otherwise duplicate solutions (produced by swaps in pairs, swaps of pairs, etc.) would be accepted [5].
 
-With this modification the Gaussian elimination algorithm does not apply any longer, so they can use larger k with no apparent drop in complexity [6].
+With this modification the Gaussian elimination algorithm does not apply any longer, so they can use larger k with no apparent drop in complexity [5].
 
-**Proposition 2** Optimized Wagner’s algorithm below which adopted from [6] with some changes:
+**Proposition 2** Optimized Wagner’s algorithm below which adopted from [5] with some changes:
 
 ![](./TrustNote_TR_2018_01/25.png)
 
-for *N = 2<sup>(n/(k+1))+1</sup>* runs in *M(n, k) = 2<sup>(n/(k+1))</sup>(2<sup>2</sup>+(n/2(k+1))* bytes of memory and *T(n, k) = k2<sup>(n/(k+1))+2</sup>* time [6].
+for *N = 2<sup>(n/(k+1))+1</sup>* runs in *M(n, k) = 2<sup>(n/(k+1))</sup>(2<sup>2</sup>+(n/2(k+1))* bytes of memory and *T(n, k) = k2<sup>(n/(k+1))+2</sup>* time [5].
 
 
-**Proposition 3** Using qM(n;k) memory, a user can find *2q<sup>k+1</sup>* solutions with cost *qT(n, k)*, so that the amortized cost drops by *q<sup>k+1</sup>* [6].
+**Proposition 3** Using qM(n;k) memory, a user can find *2q<sup>k+1</sup>* solutions with cost *qT(n, k)*, so that the amortized cost drops by *q<sup>k+1</sup>* [5].
 
-**Proposition 4** Using *M(n, k) = q* memory, a user can find 2 solutions in time *C<sub>1</sub>(q)T(n,k)*, where [6]:
+**Proposition 4** Using *M(n, k) = q* memory, a user can find 2 solutions in time *C<sub>1</sub>(q)T(n,k)*, where [5]:
 
 ![](./TrustNote_TR_2018_01/26.png)
 
-Therefore, Wagner’s algorithm for finding *2<sup>k</sup>-XOR* has a tradeoff of steepness *(k-1)/2*. At the cost of increasing the solution length, we can increase the penalty for memory-reducing users [6].
+Therefore, Wagner’s algorithm for finding *2<sup>k</sup>-XOR* has a trade off of steepness *(k-1)/2*. At the cost of increasing the solution length, we can increase the penalty for memory-reducing users [5].
 
-**Proposition 5** Using constant memory, a user can find one algorithm-bound solution in time [6]:
+**Proposition 5** Using constant memory, a user can find one algorithm-bound solution in time [5]:
 
 ![](./TrustNote_TR_2018_01/27.png)
 
-**Proposition 6** Using *M(n, k)/q* memory, a user can find 2 algorithm-bound solutions in time *C<sub>2</sub>(q)T(n, k)*, where [6]:
+**Proposition 6** Using *M(n, k)/q* memory, a user can find 2 algorithm-bound solutions in time *C<sub>2</sub>(q)T(n, k)*, where [5]:
 
 ![](./TrustNote_TR_2018_01/28.png)
 
-Therefore, the algorithm-bound proof-of-work has higher steepness (k/2), and the constant is larger. Thus far they have equalized the time and computational complexity, whereas an ASIC-equipped user or one with a multi-core cluster would be motivated to parallelize the computation if this reduces the AT cost [6].
+Therefore, the algorithm-bound proof-of-work has higher steepness (k/2), and the constant is larger. Thus far they have equalized the time and computational complexity, whereas an ASIC-equipped user or one with a multi-core cluster would be motivated to parallelize the computation if this reduces the AT cost [5].
 
 **Proposition 7** With *p <mo>&#x226A;</mo> T(n, k)* processors and *M(n, k)* shared memory a user can find 2 algorithm-bound solutions in time.
 
 ![](./TrustNote_TR_2018_01/29.png)
 
-Additionally, the memory bandwidth grows by the factor of p. For fixed memory size, memory chips with bandwidth significantly higher than that of typical desktop memory (such as DDR3) are rare. Assuming that a prover does not have access to memory with bandwidth higher than certain Bwmax, we can efficiently bound the time-memory (and thus the time-area) product for such implementations [6].
+Additionally, the memory bandwidth grows by the factor of p. For fixed memory size, memory chips with bandwidth significantly higher than that of typical desktop memory (such as DDR3) are rare. Assuming that a prover does not have access to memory with bandwidth higher than certain Bwmax, we can efficiently bound the time-memory (and thus the time-area) product for such implementations [5].
 
-To generate an instance for the proof protocol, a verifier selects a cryptographic hash function *H* and integers *n, k, d* which determine time and memory requirements as follows [6]:
+To generate an instance for the proof protocol, a verifier selects a cryptographic hash function *H* and integers *n, k, d* which determine time and memory requirements as follows [5]:
 
 - Memory M is *2<sup>(n / (k+1)) + k</sup>*
 - Time T is *(k + 1)2<sup>(n / (k+1)) + d</sup>* calls to the hash function H.
 - Solution size is *2<sup>k</sup>((n / (k+1)) + 1) + 160* bits.
 - Verification cost is 2<sup>k</sup> hashes and XORs.
 
-Then he selects a seed I (which may be a hash of transactions, block chaining variable, etc.) and asks the prover to find 160-bit nonce V and ((n/k+1) +1)-bit x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>2<sup>k</sup></sub> such that [6]:
+Then he selects a seed I (which may be a hash of transactions, block chaining variable, etc.) and asks the prover to find 160-bit nonce V and ((n/k+1) +1)-bit x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>2<sup>k</sup></sub> such that [5]:
 
 **Generalized Birthday - Condition**
 
@@ -484,17 +493,17 @@ H(I||V||x<sub>1</sub>) <mo>&#x2295;</mo> H(I||V||x<sub>2</sub>) <mo>&#x2295;</mo
 
 **Difficulty - Condition**
 
-H(I||V||x<sub>1</sub>||x<sub>2</sub>||...||x<sub>2<sup>k</sup></sub>) *has d leading zeroes*
+H(I||V||x<sub>1</sub>||x<sub>2</sub>||...||x<sub>2<sup>k</sup></sub>) *has d leading zeros*
 
 **Algorithm Binding - Condition**
 
-H(I||V||x<sub>w2<sup>l</sup>+1</sub>) <mo>&#x2295;</mo> ... <mo>&#x2295;</mo> H(I||V||x<sub>w2<sup>l</sup>+2<sup>l-1</sup></sub>) has *nl/(k+1)* leading zeroes for all *w,l*
+H(I||V||x<sub>w2<sup>l</sup>+1</sub>) <mo>&#x2295;</mo> ... <mo>&#x2295;</mo> H(I||V||x<sub>w2<sup>l</sup>+2<sup>l-1</sup></sub>) has *nl/(k+1)* leading zeros for all *w,l*
 
 *(x<sub>w2<sup>l</sup>+1</sub>||x<sub>w2<sup>l</sup>+2</sub>||...||x<sub>w2<sup>l</sup>+2<sup>l-1</sup></sub>)<(x<sub>w2<sup>l</sup>+2<sup>l-1</sup>+1</sub>||x<sub>w2<sup>l</sup>+2<sup>l-1</sup>+2</sub>||...||x<sub>w2<sup>l</sup>+2<sup>l</sup></sub>)*
 
-Here the order is lexicographical. A prover is supposed to run Wagner’s algorithm and then H [6].
+Here the order is lexicographical. A prover is supposed to run Wagner’s algorithm and then H [5].
 
-For more information about the equihash and proof of propositions please, see reference [6].
+For more information about the Equihash and proof of propositions please, see reference [5].
 
 ----------
 
@@ -506,13 +515,13 @@ In this section we will introduce the packages related to each algorithm, parame
 
 <h2 id="LGSB2">Let's get started with Blake2-Node.js-Addon</h2>
 
-In this section we will compare the pewrformance of two sets of packages created for blake2. These packages which are forked from other projects one is the **Pure JavaScript** implementation of Blake2 and the other one is Node.js C/C++ Addon created for Blake2. The difference is cristal clear in the name, but the differences are what we are going to show you in the sections below. Our package is in accordance with Blake2 [RCF 7693](https://tools.ietf.org/html/rfc7693) Standard, the final results also compared as well; more test vectores can be accessed there as well.
+In this section we will compare the performance of two sets of packages created for Blake2. These packages which are forked from other projects one is the **Pure JavaScript** implementation of Blake2 and the other one is Node.js C/C++ Addon created for Blake2. The difference is crystal clear in the name, but the differences are what we are going to show you in the sections below. Our package is in accordance with Blake2 [RCF 7693](https://tools.ietf.org/html/rfc7693) Standard, the final results also compared as well; more test vectors can be accessed there as well.
 
 ----------
 
 <h3 id="LGSB2PJ">Blake2 Pure JavaScript-Node-Addon</h3>
 
-This packages which is forked and created from other projects, is tested for generating hash using blake2b and blake2s. A JavaScript code is created to test the performance of the package which is available at <a href="#APPX1">Appendix1: Blake2b-PureJava-test</a>. The result of hashing **abc** as the input string presented below:
+This packages which is forked and created from other projects, is tested for generating hash using Blake2b and Blake2s. A JavaScript code is created to test the performance of the package which is available at <a href="#APPX1">Appendix1: Blake2b-PureJava-test</a>. The result of hashing **abc** as the input string presented below:
 
 >ba80a53f981c4d0d6a2797b69f12f6e94c212f14685ac4b74b12bb6fdbffa2d17d87c5392aab792dc252d5de4533cc9518d38aa8dbf1925ab92386edd4009923
 
@@ -520,9 +529,9 @@ The picture below is the test result of **abc** published in [RCF 7693](https://
 
 ![](./TrustNote_TR_2018_01/32.png)
 
-The result of calculating the number of hashes blake2b - Pure JavaScript can generate: **219,743** Blake2b with the digest length of 512 bits in 5 second.
+The result of calculating the number of hashes Blake2b - Pure JavaScript can generate: **219,743** Blake2b with the digest length of 512 bits in 5 second.
 
-Performing the same test for the blake2s, with the input vertor of **abc** and by developing a JavaScript code available at <a href="#APPX2">Appendix2: Blake2s-PureJava-test</a>.
+Performing the same test for the Blake2s, with the input vector of **abc** and by developing a JavaScript code available at <a href="#APPX2">Appendix2: Blake2s-PureJava-test</a>.
 
 > 508c5e8c327c14e2e1a72ba34eeb452f37458b209ed63a294d999b4c86675982
 
@@ -530,7 +539,7 @@ The picture below is the test result of **abc** published in [RCF 7693](https://
 
 ![](./TrustNote_TR_2018_01/33.png)
 
-The result of calculating the number of hashes blake2s - Pure JavaScript can generate: **450,680** Blake2s with the digest length of 256 bits in 5 second.
+The result of calculating the number of hashes Blake2s - Pure JavaScript can generate: **450,680** Blake2s with the digest length of 256 bits in 5 second.
 
 ----------
 
@@ -538,7 +547,7 @@ The result of calculating the number of hashes blake2s - Pure JavaScript can gen
 
 This package is forked from from other projects and developed to create a C/C++ Node.js Addon. The difference is JavaScript packages are slower as JavaScript is a high level programming language. The main platform in TrustNote is Node.js; Therefor to have the best performance while using the basis platform we are required to create a C/C++ Addon. Consequently, we will use JavaScript as the interface and do our calculation in C/C++ core which this favors the performance. We will present the performance of the the same functions with the same inputs in this package.
 
-Same as previous section the test is to create hash using blake2b and blake2s with the digest length of 512 and 256 respectively. A JavaScript code is created to test the performance of the package which is available at <a href="#APPX3">Appendix3: Blake2b-C/C++ Node.js-Addon-test</a>. The result of hashing **abc** as the input string presented below:
+Same as previous section the test is to create hash using Blake2b and Blake2s with the digest length of 512 and 256 respectively. A JavaScript code is created to test the performance of the package which is available at <a href="#APPX3">Appendix3: Blake2b-C/C++ Node.js-Addon-test</a>. The result of hashing **abc** as the input string presented below:
 
 >ba80a53f981c4d0d6a2797b69f12f6e94c212f14685ac4b74b12bb6fdbffa2d17d87c5392aab792dc252d5de4533cc9518d38aa8dbf1925ab92386edd4009923
 
@@ -546,9 +555,9 @@ The picture below is the test result of **abc** published in [RCF 7693](https://
 
 ![](./TrustNote_TR_2018_01/32.png)
 
-The result of calculating the number of hashes blake2b - Pure JavaScript can generate: **6,605,304** Blake2b with the digest length of 512 bits in 5 second.
+The result of calculating the number of hashes Blake2b - Pure JavaScript can generate: **6,605,304** Blake2b with the digest length of 512 bits in 5 second.
 
-Performing the same test for the blake2s, with the input vertor of **abc** and by developing a JavaScript code available at <a href="#APPX4">Appendix4: Blake2s-C/C++ Node.js-Addon-test</a>.
+Performing the same test for the Blake2s, with the input vector of **abc** and by developing a JavaScript code available at <a href="#APPX4">Appendix4: Blake2s-C/C++ Node.js-Addon-test</a>.
 
 > 508c5e8c327c14e2e1a72ba34eeb452f37458b209ed63a294d999b4c86675982
 
@@ -556,7 +565,7 @@ The picture below is the test result of **abc** published in [RCF 7693](https://
 
 ![](./TrustNote_TR_2018_01/33.png)
 
-The result of calculating the number of hashes blake2s - Pure JavaScript can generate: **7,128,410** Blake2s with the digest length of 256 bits in 5 second.
+The result of calculating the number of hashes Blake2s - Pure JavaScript can generate: **7,128,410** Blake2s with the digest length of 256 bits in 5 second.
 
 **Therefor**, it is crystal clear that C/C++ Addon generates **6,605,304**  hashes for Blake2b and **7,128,410** hashes for Blake2s with maximum digest length while Pure JavaScript generates only **219,743** hashes for Blake2b and **450,680** hashes for Blake2s.
 
@@ -586,13 +595,13 @@ This document aimed to introduce the most important subjects which directly effe
 
 [1] Shu-jen Chang, Ray Perlner, William E. Burr, Meltem S¨onmez Turan, John M. Kelsey, Souradyuti Paul, and Lawrence E. Bassham. Third-Round Report of the SHA-3 Cryptographic Hash Algorithm Competition. NISTIR 7896, National Institute for Standards and Technology, November 2012.
 
-[2] Jean-Philippe Aumasson, Samuel Neves, Zooko Wilcox-O’Hearn, Christian Winnerlein. BLAKE2: simpler, smaller, fast as MD5. URL: (https://blake2.net/blake2.pdf), January, 2013.
+[2] Jean-Philippe Aumasson, Samuel Neves, Zooko Wilcox-O’Hearn, Christian Winnerlein. Blake2: simpler, smaller, fast as MD5. URL: (https://Blake2.net/Blake2.pdf), January, 2013.
 
-[3] https://blake2.net/.
+[3] https://Blake2.net/.
 
 [4] https://vijaypradeep.com/blog/2017-04-28-ethereums-memory-hardness-explained/.
 
-[5] Alex Biryukov and Dmitry Khovratovich (2016). "Equihash: asymmetric proof-of-work based on the Generalized Birthday problem". University of Luxembourg. URL: (https://www.internetsociety.org/sites/default/files/blogs-media/equihash-asymmetric-proof-of-work-based-generalized-birthday-problem.pdf).
+[5] Alex Biryukov and Dmitry Khovratovich (2016). "Equihash: asymmetric proof-of-work based on the Generalized Birthday problem". University of Luxembourg. URL: (https://www.internetsociety.org/sites/default/files/blogs-media/Equihash-asymmetric-proof-of-work-based-generalized-birthday-problem.pdf).
 
 [6] Daniel J. Bernstein, Niels Duif, Tanja Lange, Peter Schwabe, Bo-Yin Yang. High-speed high-security signatures. Journal of Cryptographic Engineering 2 (2012), 77–89. URL: https://cr.yp.to/papers.html#ed25519. Date: 2011.09.26.
 
@@ -617,17 +626,17 @@ This document aimed to introduce the most important subjects which directly effe
 	var count = 0;
 	var TD = 0;
 	var test = require('tape')
-	var blake2b = require('./blake2b')
+	var Blake2b = require('./Blake2b')
 	var util = require('./util')
 	var fs = require('fs')
-	var blake2bHex = blake2b.blake2bHex
-	var hash = blake2bHex('abc');
-	console.log('blake2b result for input array "abc"');
+	var Blake2bHex = Blake2b.Blake2bHex
+	var hash = Blake2bHex('abc');
+	console.log('Blake2b result for input array "abc"');
 	console.log(hash.toString('hex'));
 	var endTime = new Date().getTime();
 	TD = endTime  - startTime;
 	while ((endTime  - startTime) < 5000){
-		var hash = blake2bHex('abc');
+		var hash = Blake2bHex('abc');
 		var endTime = new Date().getTime();
 	  	count++;}
     console.log('Number of hashes generated during 5 seconds:');
@@ -642,19 +651,19 @@ This document aimed to introduce the most important subjects which directly effe
 	var test = require('tape')
 	var toHex = require('./util').toHex
 	var util = require('./util')
-	var b2s = require('./blake2s')
-	var blake2s = b2s.blake2s
-	var blake2sHex = b2s.blake2sHex
-	var blake2sInit = b2s.blake2sInit
-	var blake2sUpdate = b2s.blake2sUpdate
-	var blake2sFinal = b2s.blake2sFinal
-	var hash = blake2sHex('abc');
-	console.log('blake2s result for input array "abc"');
+	var b2s = require('./Blake2s')
+	var Blake2s = b2s.Blake2s
+	var Blake2sHex = b2s.Blake2sHex
+	var Blake2sInit = b2s.Blake2sInit
+	var Blake2sUpdate = b2s.Blake2sUpdate
+	var Blake2sFinal = b2s.Blake2sFinal
+	var hash = Blake2sHex('abc');
+	console.log('Blake2s result for input array "abc"');
 	console.log(hash.toString('hex'));
 	var endTime = new Date().getTime();
 	TD = endTime  - startTime;
 	while ((endTime  - startTime) < 5000) {
-		var hash = blake2sHex('abc');
+		var hash = Blake2sHex('abc');
 		var endTime = new Date().getTime();
 	    count++;}
 	console.log('Number of hashes generated during 5 seconds:');
@@ -679,7 +688,7 @@ This document aimed to introduce the most important subjects which directly effe
 	var buf = new Buffer('abc');
 	var hash = Blake2.sumBuffer(buf, Blake2.ALGORITHMS.B);
 	assert(hash instanceof Buffer);
-	console.log('blake2b:');
+	console.log('Blake2b:');
 	console.log(hash.toString('hex'));
 	var endTime = new Date().getTime();
 	TD = endTime  - startTime;
@@ -701,7 +710,7 @@ This document aimed to introduce the most important subjects which directly effe
 	var buf = new Buffer('abc');
 	var hash2 = Blake2.sumBuffer(buf, Blake2.ALGORITHMS.S);
 	assert(hash2 instanceof Buffer);
-	console.log('blake2s:');
+	console.log('Blake2s:');
 	console.log(hash2.toString('hex'));
 	var endTime = new Date().getTime();
 	TD = endTime  - startTime;
