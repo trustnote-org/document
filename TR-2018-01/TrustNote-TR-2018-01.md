@@ -1,6 +1,6 @@
 <html><font face = "Cambria" size = "5">
 
-<html> <font size="+4"><p align="center"><b>
+<html> <font size="24"><p align="center"><b>
 Preliminary Draft of TrustNote Cryptographic Algorithms</b></font></html>
 
 -----------
