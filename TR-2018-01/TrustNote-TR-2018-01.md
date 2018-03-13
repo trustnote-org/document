@@ -1,7 +1,5 @@
-<html><font face = "Cambria" size = "5">
-
-<html> <font size="24"><p align="center"><b>
-Preliminary Draft of TrustNote Cryptographic Algorithms</b></font></html>
+<h1 id="Contents"><p align="center">
+Preliminary Draft of TrustNote Cryptographic Algorithms</h1>
 
 -----------
 
