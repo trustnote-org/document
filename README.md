@@ -1,8 +1,8 @@
 **White Paper**
-[TrustNote-Whitepaper.md](./TrustNote-Whitepaper.md)
-[TrustNote-Whitepaper.html](https://trustnote.github.io/TrustNote-Whitepaper.html)
-[TrustNote-Whitepaper.pdf](./TrustNote-Whitepaper.pdf)
-[TrustNote-Whitepaper-cn.pdf](./TrustNote-Whitepaper-cn.pdf)
+- [markdown](./TrustNote-Whitepaper.md)
+- [html](https://trustnote.github.io/TrustNote-Whitepaper.html)
+- [pdf](./TrustNote-Whitepaper.pdf)
+- [Chinese version](./TrustNote-Whitepaper-cn.pdf)
 
 **Technology Reports**
 - **TrustNote-TR-2018-01** TrustNote Cryptographic Algorithms(Draft)
