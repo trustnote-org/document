@@ -1,7 +1,15 @@
 <html>
-<div align="center">
 
-<p><a target="_blank" href="images/TrustNote-Whitepaper-Cover.png"><img align="center" src="images/TrustNote-Whitepaper-Cover.png"></a></p>
+<div align="center">
+<font face="cambria">
+<p><a target="_blank" href="images/TrustNote-Logo.png"><img align="center" width="300px" height="300px" src="images/TrustNote-Logo.png"></a></p>
+
+<p><b><font size="5">FAST ∙ SCALABLE ∙ DEVELOPER FRIENDLY</font></b></p>
+
+<p><b><font size="5">Technical White Paper</font></b></p>
+
+<p><b><font size="3">TrustNote Institute of Technology</font></b></p>
+<p><font size="3">May 2018</font></p>
 
 </div>
 
@@ -74,7 +82,7 @@
 <div align="justify">
 
 <font face="cambria" size="3">
-  
+
 <h1><a id="BACKGROUND"></a>1. BACKGROUND</h1>
 <p>For about 10 years, since January the 3<sup>rd</sup>, 2009, Bitcoin has been operating safely, a miracle in the history of computer network technology. The success of Bitcoin unlocked the doors to the future of the world’s economy for digital crypto-currencies; a new world full of imagination. Satoshi Nakamato creatively proposed the Blockchain - a chained data structure based on hash functions - and succeeded in building a well-operated, decentralized peer to peer network which opened the new era of digital crypto-currencies.  Blockchain technologies are developing fast, driving change across many industries, sparking innovation and creativity.</p>
 <p>Blockchain has provided a decentralized trust mechanism and has become a brand-new paradigm and key methodology in data protection and data value exchange.  Now in its booming period, blockchain is constantly being integrated with various technologies, various scenarios are also being explored in terms of how to utilize the technical characteristics of blockchain, blockchain applications have been expanded from data tamper resistance and data value exchange to digital tokens and social-networking arenas.  The growing number of blockchain user scenarios pose many challenges for blockchain technology, demanding stronger security, higher transaction concurrency, and shorter transaction acknowledgment delay.</p>
@@ -123,22 +131,22 @@
 
 <div align="justify">
 
-<font face="cambria" size="3">  
-  
+<font face="cambria" size="3">
+
 <p>For security concerns, unlike Bitcoin’s blockchain which is guaranteed by the massive computing power of the network, DAG based TrustNote relies on the fast advance of transactions and the uncertainty of the relationship between the transactions as the "<b>firewall</b>", which leaves the entire system looks too lawless to be attacked. TrustNote benefits from a two-tier consensus mechanism and an innovative TrustME Consensus Algorithm. Those Super Nodes that participate in the TrustME consensus and contribute to the healthy expansion of DAG-ledger will get the mining reward.</p>
 
 <h2><a id="COMPARISON"></a>2.3. Comparison</h2>
-<p>Standing on the shoulders of giants, absorbs the advantages of existing blockchain projects and addresses their major issues, a more prosperous TrustNote platform becomes possible. A comparison of current well-known DAG-ledgers (IOTA and Byteball) with TrustNote is shown in Table 2-1.</p>  
-  
+<p>Standing on the shoulders of giants, absorbs the advantages of existing blockchain projects and addresses their major issues, a more prosperous TrustNote platform becomes possible. A comparison of current well-known DAG-ledgers (IOTA and Byteball) with TrustNote is shown in Table 2-1.</p>
+
 </font>
 </div>
 
 <div align="center">
 <p><b>Table 2-1 DAG-Ledger Comparison</b></p>
   </div>
-  
-<div align="center"> 
-  
+
+<div align="center">
+
 |  |	<b>IOTA</b> |	<b>Byteball</b>	| <b>TrustNote</b> |
 | :---: | :---: | :---: | :---: |
 | <b>Token</b>	| IOTA	| Byte |	TTT |
@@ -154,7 +162,7 @@
 
 
 <div align="justify">
-<font face="cambria" size="3">  
+<font face="cambria" size="3">
 
 <h1><a id="DATA-STRUCTURES"></a>3. DATA STRUCTURES</h1>
 
@@ -163,7 +171,7 @@
 <ul>
   <li>Header: The hash value of the previous Unit (parent).</li>
 <li>Messages: A Unit contains one or more messages, there are various types of message, and each message type has its own unique data structure.</li>
-<li>Signatures: A Unit contains one or more users’ signatures.</li>  
+<li>Signatures: A Unit contains one or more users’ signatures.</li>
 <li>Address: A user can have multiple addresses; the addresses are generated with BIP-0044 algorithm.</li>
   </lu>
 <p>Definition of each Unit’s field is shown in table 3-1.</p>
@@ -176,7 +184,7 @@
 
 <div>
 <center>
-  
+
  | Field Name |	Definition |	Remarks |
  |--------------|-------------------------|------------------------------|
  | <b>version</b> |	TrustNote protocol version number |	e.g. ‘1.0’ |
@@ -188,14 +196,14 @@
 </center>
 </div>
 <div align="justify">
-<font face="cambria" size="3"> 
+<font face="cambria" size="3">
 
 <p>The message’s field stores the actual data of the Unit, it is an array of one or more messages. TrustNote supports various types of messages which are distinguished by the app field.</p>
 </font>
 </div>
 
 <div align="center">
-  
+
 <p><b>Table 3-2  Field Definition of messages</b></p>
 </div>
 
@@ -213,7 +221,7 @@
 </div>
 
 <div align="justify">
-<font face="cambria" size="3"> 
+<font face="cambria" size="3">
 
 <h2><a id="MESSAGE-TYPES"></a>3.2. Message Types</h2>
 <p>TrustNote supports various message types which can be further extended if needed, different types of messages are used to store different data formats interpretable by different parsing rules.  Different types of TrustNote message are recognizable by the message’s app field.</p>
@@ -356,12 +364,12 @@ messages:[{
 </div>
 
 <div align="center">
-  
+
 <p><b>Table 3-3 Field Definition of Asset Definition message</b></p>
 </div>
 
 <div align="center">
-  
+
 | Field Name |	Definition |	Remarks |
 | --- | :---: | :---: |
 | <b>cap</b> | Maximum amount of assets which can be defined	|  |
@@ -432,15 +440,15 @@ messages:[{
 
 
 <div align="center">
-  
+
 <p><b>Table 4-1 Comparison of Nodes</b></p>
 
 </div>
 
-<div align="center"> 
-  
-<div align="center"> 
- 
+<div align="center">
+
+<div align="center">
+
 | | Super Node	| Full Node |	Light Node |	Micro Node |
 | :---: | :---: | :---: | :---: | :---: |
 | ledger	| full ledger	 | full ledger	| light ledger |	N/A |
@@ -465,7 +473,7 @@ messages:[{
  	<li>Credibility: Has a good reputation on the network in submitting valid Units.</li>
 </ul>
 <p>A super node must generate the deposit contract and pay it to start its activity on the network, the deposit will be returned to the super node defined address as soon as the silent-locking time would ends. Super Node can generate the PoW unit and receive Attestation power and become an Attestor by fitting in certain conditions. Attestors will get an Attestation Reward by sending TrustME Units and earn Attestation fees as well. For more information about the network topology, nodes taxonomy and so on, please, see <a href="https://github.com/trustnote/document/blob/master/TrustNote-TR-2018-02.pdf" target="_blank" rel="external">TrustNote-TR-2018-02</a>.</p>
-  
+
 <h2><a id="UNIT-INTER-REFERENCE"></a>4.2. Unit Inter-Reference</h2>
 
 <p>Each Unit in TrustNote should reference multiple Units that have no Parent-Child relationship with each other, the new Unit will preferentially reference the Units with more Parents.  When following a Parent Unit in its Child Unit’s direction, we would see many forks if a Unit is referenced by many Child Units. A certain number of Parent Units will merge into one if these Parents are referenced by the same Children.</p>
@@ -490,7 +498,7 @@ messages:[{
 <h2><a id="TRANSACTION-CONFIRMATION"></a>4.4. Transaction Confirmation</h2>
 
 <p>As new Units are created, each Node keeps track of its current MC, as they are going to create a new Unit for every valid Childless Unit. Current MCs may be different for different Nodes because they may see different sets of unstable Units.  The current MC will constantly change itself as new Units arrive.  However, certain parts of the MC that are old enough, will remain unchanged.</p>
-	
+
 <p>When traveling back, all MCs will come to some point, this point and any previous Units are stable and won’t be changed by the arrival of new Units.  In fact, the Genesis Unit is a natural initial stable point.  Assuming we have built a current MC based on the current set of unstable Units, and there are some Units that located on this MC that were previously believed to be stable, this means that all future MCs believe they will meet the same stable Units and travel back along the same path.  If we can find a way of advancing this stable point forward in the opposite direction of the Genesis Unit, then we should be able to prove the existence of such stable point by Mathematical Induction. Those Units referenced by this stable point will get a definite MCI, and all messages contained in these Units will also get confirmed.For more information about Transaction Confirmations, please, see <a href="https://github.com/trustnote/document/blob/master/TrustNote-TR-2018-02.pdf" target="_blank" rel="external">TrustNote-TR-2018-02</a>.</p>
 
 <h2><a id="TRANSACTION-FEES-AND-MINING-REWARD"></a>4.5. Transaction Fees and Mining Reward</h2>
@@ -519,7 +527,7 @@ messages:[{
 
 <p>TrustME Units must comply with the previously mentioned Unit inter-reference rules. The TrustME Unit can only reference unstable Unit and must validate the Units it references, and the correctness of the "Child-Parent" relationship, until the stable MC unit is verified.  TrustME Units are encouraged to reference multiple Best Parent Units that are not stable yet, thus to accelerate the stabilization of the Units and promote DAG-ledger’s forward advancement and convergence.</p>
 
-<p>Only when the TrustME Unit becomes the Unit on the MC, the corresponding attestation reward can be obtained. In a consensus round, the TrustME Units on the MC calculate their proportion of current consensus round’s attestation reward according to the number of effective references.  When each TrustME Unit becomes the MC Unit and stabilizes, the TrustME Unit’s effective references are calculated. For more in depth information about TrustME-PoW and related topics, please visit <a href="https://github.com/trustnote/document/blob/master/TrustNote-TR-2018-02.pdf" target="_blank" rel="external">TrustNote-TR-2018-02</a>.</p>  
+<p>Only when the TrustME Unit becomes the Unit on the MC, the corresponding attestation reward can be obtained. In a consensus round, the TrustME Units on the MC calculate their proportion of current consensus round’s attestation reward according to the number of effective references.  When each TrustME Unit becomes the MC Unit and stabilizes, the TrustME Unit’s effective references are calculated. For more in depth information about TrustME-PoW and related topics, please visit <a href="https://github.com/trustnote/document/blob/master/TrustNote-TR-2018-02.pdf" target="_blank" rel="external">TrustNote-TR-2018-02</a>.</p>
 
 <h2><a id="TRUSTME-BA"></a>4.7. TrustME-BA</h2>
 <p>TrustME-BA is a consensus mechanism based on Verifiable Random Function (VRF) and Byzantine Agreement (BA) algorithm, it randomly selects a small number of Super Nodes as Attestor Nodes and determines the priority of the Attestor Nodes.</P>
@@ -535,7 +543,7 @@ messages:[{
 </ul>
 <p>The rationale for this assumption is that in order to attack TrustME-BA successfully, attackers must invest enough TTT tokens.  TrustME-BA assumes an attacker can control a certain amount of target Super Nodes, but he cannot control a large quantity of Super Nodes to hold more than two thirds of total TTT in circulation.</p>
 <h4>Robustness</h4>
-<p>Beyond Security goals, TrustME-BA assumes network reachability to rigorously determine the priorities among Attestor Nodes.  This goal is that all Super Nodes can reach a consensus on a new set of Attestor Nodes selected within one minute.  To establish a robust platform, TrustME-BA makes a strong synchronization assumption that all honest Super Nodes send messages to most of other honest Nodes within a known time frame.  This assumption acknowledges that an attacker may control some of the honest Super Nodes, but he cannot control the entire network in a large scale nor divide the network.</p>  
+<p>Beyond Security goals, TrustME-BA assumes network reachability to rigorously determine the priorities among Attestor Nodes.  This goal is that all Super Nodes can reach a consensus on a new set of Attestor Nodes selected within one minute.  To establish a robust platform, TrustME-BA makes a strong synchronization assumption that all honest Super Nodes send messages to most of other honest Nodes within a known time frame.  This assumption acknowledges that an attacker may control some of the honest Super Nodes, but he cannot control the entire network in a large scale nor divide the network.</p>
 
 <h3><a id="Final-Consensus-and-Tentative-Consensus"></a>4.7.2. Final Consensus and Tentative Consensus</h3>
 <p>TrustME-BA has two types of consensus status:  </p>
@@ -571,7 +579,7 @@ messages:[{
 <h1><a id="SMART-CONTRACT"></a>5. SMART CONTRACT</h1>
 
 <p>TrustNote has non-Turing-complete declarative Smart Contracts designed to interpret the expectations of the contracts, to support Boolean operations while increasing the support for variable operations, contract data access and it does not support stacks and jump instructions. Therefore, it does not only retain the benefits of a declarative contracting language such as being easy to understand, and having strong security, furthermore enhances the expression of the contracting language.  TrustNote also improves the storage capabilities for Smart Contracts’ internal data, hence greatly improving the support to complex application scenarios. Comparing with Turing-complete Smart Contracts (e.g. Solidity), TrustNote enjoys the advantages of low complexity, light weight and high performance smart contracts, while making it easier to write the contracts with less probability of making errors.</p>
-<p>There is no “account” in TrustNote, TTT is stored in the form of Unspent Transaction Output (UTXO) at the address of a tamper-resistant distributed ledger.  In TrustNote Smart Contracts, an address is defined as a Boolean expression that its value can be “true” or “false”.  If the signature provided by the transaction is valid and generated by the private key corresponding to this public key, the result of this expression is equal to “true”, otherwise it will be evaluated as “false”.  All expressions in a Smart Contract eventually result in a Boolean value, and multiple Boolean expressions can be combined using Boolean operations. 
+<p>There is no “account” in TrustNote, TTT is stored in the form of Unspent Transaction Output (UTXO) at the address of a tamper-resistant distributed ledger.  In TrustNote Smart Contracts, an address is defined as a Boolean expression that its value can be “true” or “false”.  If the signature provided by the transaction is valid and generated by the private key corresponding to this public key, the result of this expression is equal to “true”, otherwise it will be evaluated as “false”.  All expressions in a Smart Contract eventually result in a Boolean value, and multiple Boolean expressions can be combined using Boolean operations.
 For example, the following definition requires two signatures:</P>
 
 ```javascript
@@ -643,7 +651,7 @@ For example, the following definition requires two signatures:</P>
 ]]
 ```
 
-<p>Delegates signing to other addresses is useful for building shared control address (addresses controlled by multiple users).  This syntax gives users the flexibility of changing the definition of their own address, without bothering other users.</p> 
+<p>Delegates signing to other addresses is useful for building shared control address (addresses controlled by multiple users).  This syntax gives users the flexibility of changing the definition of their own address, without bothering other users.</p>
 <p>A sub-definition enables transactions to be jointly signed by other addresses.</p>
 
 ```javascript
@@ -654,9 +662,9 @@ For example, the following definition requires two signatures:</P>
 
 ```JavaScript
 ["in data feed", [
-	["ADDRESS1", "ADDRESS2", …], 
-	"data feed name", 
-	"=", 
+	["ADDRESS1", "ADDRESS2", …],
+	"data feed name",
+	"=",
 	"expected value"
 ]]
 ```
@@ -677,7 +685,7 @@ For example, the following definition requires two signatures:</P>
 ]]
 ```
 
-<p>The above expression relies upon two oracles, one is the euro/dollar exchange rate, and the other is the release time.  Initially, both parties prepare funds for the addresses defined by this expression and provide them with their respective share of funds; then, if the euro/dollar exchange rate announced by the exchange address plus 0.200 ever exceeded 1.150, address 1 takes away all the funds.  Before 1st October 2016, and after the timestamp issued by the oracle, if the above-mentioned condition does not happen, address 2 takes away the entire funds.</p> 
+<p>The above expression relies upon two oracles, one is the euro/dollar exchange rate, and the other is the release time.  Initially, both parties prepare funds for the addresses defined by this expression and provide them with their respective share of funds; then, if the euro/dollar exchange rate announced by the exchange address plus 0.200 ever exceeded 1.150, address 1 takes away all the funds.  Before 1st October 2016, and after the timestamp issued by the oracle, if the above-mentioned condition does not happen, address 2 takes away the entire funds.</p>
 <p>In another example, a consumer buys goods from an online merchant who they didn’t trust, if the goods are not sent to him and he wants a refund, the consumer can pay the money to a shared address defined as follows:</p>
 
 ```javascript
@@ -702,9 +710,9 @@ For example, the following definition requires two signatures:</P>
 	["and", [
 		["address", "EXCHANGE ADDRESS"],
 		["has", {
-			what: "output", 
-			asset: "ID of alternative asset", 
-			amount_at_least: 1200, 
+			what: "output",
+			asset: "ID of alternative asset",
+			amount_at_least: 1200,
 			address: "USER ADDRESS"
 		}]
 	]]
@@ -723,7 +731,7 @@ For example, the following definition requires two signatures:</P>
 
 <div align="center">
 <font face="cambria">
-  
+
 <p><a target="_blank" href="images/TrustNote-Whitepaper-Road Map.png"><img align="center" src="images/TrustNote-Whitepaper-Road Map.png"></a></p>
 
 <p><b>Figure 6-1 Roadmap </b></p>
@@ -732,13 +740,13 @@ For example, the following definition requires two signatures:</P>
 
 <div align="justify">
 <font face="cambria" size="3">
-	
+
 <ul>
 <li>Main Chain and the Multi-Platform Wallet:  Build the Main Chain, develop basic version of wallet and release it to the public, and token issuance;</li>
 <li>Open Source:  TrustNote is an open-source project and will be hosted on Github.  The first Github release is scheduled on Q1 2018.  A development team will be set up including TrustNote employees and community developers.  Every developer can contribute to the project and the changes will be submitted by the development team upon code review;</li>
 <li>Developer Community: Communicate with developers, receive questions and bug reports, publish software releases, technical articles and roadmaps, integrate the most advanced blockchain technologies by interacting with the world blockchain development community;</li>
 	</ul>
-	
+
  <ul>
 	<li>Wallet Evolution:</li>
  	<ul><lu>Multi-platform: Use cross-platform language Node.js for development, support multiple platforms such as Windows, Mac OS, Linux, Android, iOS, Chrome, Firefox, ensure safety usage of wallet inside web browser;</li>
@@ -762,7 +770,7 @@ For example, the following definition requires two signatures:</P>
 
 <div align="center">
 <font face="cambria">
-  
+
 <p><a target="_blank" href="images/TrustNote-Whitepaper-Architecture of Crypto-Token Platform.png"><img align="center" src="images/TrustNote-Whitepaper-Architecture of Crypto-Token Platform.png"></a></p>
 
 <p><b>Figure 6-2 Architecture of Crypto-Token Platform</b></p>
@@ -796,7 +804,7 @@ For example, the following definition requires two signatures:</P>
 
 <div align="center">
 <font face="cambria">
-  
+
 <p><a target="_blank" href="images/TrustNote-Whitepaper-Attenuation Chart of Attestation Rewards .png"><img align="center" src="images/TrustNote-Whitepaper-Attenuation Chart of Attestation Rewards .png"></a></p>
 
 <p><b>Figure 7-1 Attenuation Chart of Attestation Rewards </b></p>
