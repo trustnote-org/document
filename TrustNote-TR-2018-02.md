@@ -6,7 +6,7 @@
 
 <p><b><font size="5">FAST ∙ SCALABLE ∙ DEVELOPER FRIENDLY</font></b></p>
 
-<p><b><font size="5">TrustNote Cryptographic Algorithms</font></b></p>
+<p><b><font size="5">The TrustME-PoW Consensus Scheme</font></b></p>
 <p><font size="5">Decentralized, Network Partition Tolerance, Minable</font></p>
 
 <p><b>TrustNote Institute of Technology</font></b></p>
